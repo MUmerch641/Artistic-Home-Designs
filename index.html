@@ -138,7 +138,7 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="css/modern-style.css">
+    <link rel="stylesheet" href="css/modern-style.css?v=4.0">
     
     <!-- Favicon -->
     <link rel="icon" href="favicons/09-PNG-image-e1728376877246-150x150.png" type="image/png">
@@ -147,8 +147,8 @@
     <link rel="manifest" href="manifest.json">
     
     <!-- Additional SEO and Performance Tags -->
-    <meta name="theme-color" content="#8B4513">
-    <meta name="msapplication-TileColor" content="#8B4513">
+    <meta name="theme-color" content="#D4B896">
+    <meta name="msapplication-TileColor" content="#D4B896">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="default">
     <meta name="apple-mobile-web-app-title" content="Artistic Home Designs">
@@ -216,7 +216,7 @@
                 <a href="#portfolio" class="nav-link">Portfolio</a>
                 <a href="#contact" class="nav-link cta-link">Contact</a>
             </div>
-            <div class="nav-toggle" id="nav-toggle">
+            <div class="nav-toggle" id="nav-toggle" onclick="toggleMobileMenu()">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -761,9 +761,24 @@
         <i class="fas fa-arrow-up"></i>
     </button>
 
+    <!-- Mobile Menu Fallback Script -->
+    <script>
+        function toggleMobileMenu() {
+            console.log('Fallback mobile menu toggle');
+            const navToggle = document.getElementById('nav-toggle');
+            const navMenu = document.getElementById('nav-menu');
+            
+            if (navToggle && navMenu) {
+                navToggle.classList.toggle('active');
+                navMenu.classList.toggle('active');
+                document.body.style.overflow = navMenu.classList.contains('active') ? 'hidden' : 'auto';
+            }
+        }
+    </script>
+
     <!-- Scripts -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="js/modern-script.js"></script>
+    <script src="js/modern-script.js?v=2.0"></script>
     
     <!-- Additional Structured Data for SEO -->
     <script type="application/ld+json">
@@ -1019,6 +1034,15 @@
                 });
             });
         });
+    </script>
+    
+    <!-- Force Cache Refresh -->
+    <script>
+        // Force cache refresh for new design
+        if (!sessionStorage.getItem('designRefreshed')) {
+            sessionStorage.setItem('designRefreshed', 'true');
+            window.location.reload(true);
+        }
     </script>
 </body>
 </html>

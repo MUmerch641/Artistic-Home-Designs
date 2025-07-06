@@ -48,18 +48,24 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     // Enhanced mobile menu toggle with animations
-    navToggle.addEventListener('click', function() {
-        navToggle.classList.toggle('active');
-        navMenu.classList.toggle('active');
-        document.body.style.overflow = navMenu.classList.contains('active') ? 'hidden' : 'auto';
-        
-        // Animate menu items
-        if (navMenu.classList.contains('active')) {
-            navLinks.forEach((link, index) => {
-                link.style.animation = `slideInFromRight 0.5s ease ${index * 0.1}s both`;
-            });
-        }
-    });
+    if (navToggle && navMenu) {
+        navToggle.addEventListener('click', function(e) {
+            e.preventDefault();
+            console.log('Hamburger clicked'); // Debug log
+            navToggle.classList.toggle('active');
+            navMenu.classList.toggle('active');
+            document.body.style.overflow = navMenu.classList.contains('active') ? 'hidden' : 'auto';
+            
+            // Animate menu items
+            if (navMenu.classList.contains('active')) {
+                navLinks.forEach((link, index) => {
+                    link.style.animation = `slideInFromRight 0.5s ease ${index * 0.1}s both`;
+                });
+            }
+        });
+    } else {
+        console.error('Navigation elements not found');
+    }
 
     // Enhanced smooth scrolling with easing
     navLinks.forEach(link => {
@@ -882,6 +888,12 @@ document.addEventListener('DOMContentLoaded', function() {
 
         // Close lightbox with close button
         document.querySelector('.lightbox-close').addEventListener('click', closeLightbox);
+
+        // Close lightbox with backdrop
+        const lightboxBackdrop = document.querySelector('.lightbox-backdrop');
+        if (lightboxBackdrop) {
+            lightboxBackdrop.addEventListener('click', closeLightbox);
+        }
 
         // Keyboard navigation
         document.addEventListener('keydown', function(e) {
