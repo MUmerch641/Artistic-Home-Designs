@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://artistichomedesigns.co.za/</loc>
+    <lastmod>2024-12-20T10:00:00+02:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://artistichomedesigns.co.za/images/09-PNG-image-e1728376877246.png</image:loc>
+      <image:title>Artistic Home Designs Logo</image:title>
+      <image:caption>Premium custom furniture and interior design specialists in Mthatha</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://artistichomedesigns.co.za/images/09-20241008_074715761_iOS.jpg</image:loc>
+      <image:title>Custom Furniture Workshop</image:title>
+      <image:caption>Professional workshop creating custom furniture in Mthatha</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://artistichomedesigns.co.za/images/09-20241008_074732697_iOS.jpg</image:loc>
+      <image:title>Expert Craftsmen</image:title>
+      <image:caption>Skilled craftsmen creating bespoke furniture</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://artistichomedesigns.co.za/images/09-20241008_074747811_iOS.jpg</image:loc>
+      <image:title>Custom Wardrobe Installation</image:title>
+      <image:caption>Premium wardrobe installation and fitting services</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://artistichomedesigns.co.za/#services</loc>
+    <lastmod>2024-12-20T10:00:00+02:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://artistichomedesigns.co.za/#about</loc>
+    <lastmod>2024-12-20T10:00:00+02:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://artistichomedesigns.co.za/#portfolio</loc>
+    <lastmod>2024-12-20T10:00:00+02:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://artistichomedesigns.co.za/#contact</loc>
+    <lastmod>2024-12-20T10:00:00+02:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+</urlset>

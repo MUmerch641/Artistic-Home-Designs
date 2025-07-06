@@ -1,0 +1,40 @@
+{
+  "name": "Artistic Home Designs",
+  "short_name": "ArtisticHD",
+  "description": "Premium custom furniture and interior design specialists in Mthatha, South Africa",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#8B4513",
+  "orientation": "portrait-primary",
+  "categories": ["business", "lifestyle", "productivity"],
+  "lang": "en-ZA",
+  "icons": [
+    {
+      "src": "favicons/09-PNG-image-e1728376877246-150x150.png",
+      "sizes": "150x150",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "images/09-PNG-image-e1728376877246.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable any"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "images/09-20241008_074715761_iOS.jpg",
+      "sizes": "1280x720",
+      "type": "image/jpeg",
+      "form_factor": "wide"
+    },
+    {
+      "src": "images/09-20241008_074732697_iOS.jpg",
+      "sizes": "720x1280",
+      "type": "image/jpeg",
+      "form_factor": "narrow"
+    }
+  ]
+}

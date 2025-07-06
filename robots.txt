@@ -1,0 +1,34 @@
+User-agent: *
+Allow: /
+Allow: /css/
+Allow: /js/
+Allow: /images/
+Allow: /favicons/
+Allow: /fonts/
+
+Disallow: /admin/
+Disallow: /private/
+Disallow: /*.php$
+Disallow: /*.cgi$
+
+# Sitemap
+Sitemap: https://artistichomedesigns.co.za/sitemap.xml
+
+# Crawl-delay
+Crawl-delay: 1
+
+# Specific bot rules
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Slurp
+Allow: /
+
+User-agent: facebookexternalhit
+Allow: /
+
+User-agent: Twitterbot
+Allow: /
